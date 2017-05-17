@@ -1,0 +1,13 @@
+{
+  "name": "check_load_resource",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": "",
+  "keywords": [],
+  "author": "lclangcheng",
+  "license": "lclangcheng",
+  "dependencies": {
+    "cheerio": "~0.22.0"
+  },
+  "repository": {}
+}
