@@ -3,7 +3,7 @@
 * @author lai_lc
 * @date   2017-05-17 15:01:14
 * @Last Modified by:   lai_lc
-* @Last Modified time: 2017-05-17 18:20:52
+* @Last Modified time: 2017-05-18 10:13:00
 */
 
 'use strict';
@@ -13,7 +13,6 @@ var url = require('url');
 
 function API() {
 	this.exec = function(route, request, response) {
-		//console.log("exec ", route);
 
 		var requestInterface = route.slice(5);
 		if (requestInterface.indexOf("getProjectData") !== -1) {

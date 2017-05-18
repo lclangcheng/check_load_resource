@@ -3,7 +3,7 @@
 * @author lai_lc
 * @date   2017-05-17 14:22:18
 * @Last Modified by:   lai_lc
-* @Last Modified time: 2017-05-17 18:21:00
+* @Last Modified time: 2017-05-18 10:12:55
 */
 
 'use strict';
@@ -18,7 +18,6 @@ function Preview() {
 	var root = 'http://editor.720wan.com/op/preview/v2/';
 
 	this.exec = function(route, request, response) {
-		//console.log("exec ", route);
 		let requestUrl = request.url;
 		let parameters = url.parse(requestUrl, true).query;
 		let pathName = url.parse(requestUrl).pathname;

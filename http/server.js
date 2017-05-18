@@ -3,7 +3,7 @@
 * @author lai_lc
 * @date   2017-05-17 14:25:13
 * @Last Modified by:   lai_lc
-* @Last Modified time: 2017-05-17 18:06:23
+* @Last Modified time: 2017-05-18 10:04:45
 */
 
 'use strict';
@@ -18,6 +18,7 @@ router.addRoute('/gameIndex', require('./routers/gameIndex'));
 router.addRoute('/res', require('./routers/res'));
 
 
+// add http server 
 var start = () => {
 	let port = 8888;
 
@@ -32,6 +33,7 @@ var start = () => {
 	})
 }
 
+// handle http reuqest and response
 var onConnected = (request, response) => {
 	router.handleRoute(request.url, request, response);
 }
